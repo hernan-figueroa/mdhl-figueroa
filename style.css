@@ -1,0 +1,72 @@
+header{
+    display: flex;
+    background-color: rgb(245, 245, 245);
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 40px;
+}
+
+#logo-header{
+    margin-right: 10px;
+}
+
+nav a{
+    border-right: 1px solid #000000;
+    padding: 0 0.3em;
+}
+
+nav a:last-child{
+    border-right: none;
+}
+
+aside{
+    float: left;
+    margin: 0 20px;
+}
+
+aside img{
+    border: 2px solid #999999;
+}
+
+section{
+    display: flex;
+    align-items: stretch;
+}
+
+align-column{
+    flex-direction: column;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+h2{
+    margin:0;
+    margin-bottom: 20px;
+}
+
+
+#events h3{
+    text-indent: 2em;
+}
+
+#events>p{
+    text-indent: 3em;
+}
+
+#events h3{
+    margin:0;
+    font-weight: normal;
+    font-style: italic;
+}
+p{
+    text-indent: 1em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+
+
+
