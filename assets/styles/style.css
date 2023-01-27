@@ -10,7 +10,8 @@ body {
   background-color: aliceblue;
 }
 .fondo{
-    background-color: rgb(75, 131, 180);
+    background-color: rgb(106, 150, 189);
+    height: 100vh;
 }
 
 header {
@@ -58,17 +59,21 @@ h2 {
 }
 
 nav {
-  display: inline-flex;
-  left: -5px;
-  width: 150px;
+  display: inline-block;
+  position: absolute;
+  width: 200px;
 }
 
 main {
   display: inline-block;
   width: 60%;
+  position: relative;
+  left: 200px;
+  margin-top: 15px;
 }
 
 nav a {
+  display: block;
   font-size: medium;
   margin-top: 2px;
   padding: 0 1em;
@@ -93,12 +98,7 @@ nav a:first-child {
 }
 
 section {
-  display: flex;
-  align-items: stretch;
-}
-
-.align-column {
-  flex-direction: column;
+  display: inline-block;
 }
 
 .active-link {
