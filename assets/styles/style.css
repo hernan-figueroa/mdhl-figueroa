@@ -10,7 +10,7 @@ body {
   background-color: aliceblue;
 }
 .fondo{
-    background-color: rgb(106, 150, 189);
+    background-color: rgb(229, 233, 238);
     height: 100vh;
 }
 
@@ -60,15 +60,14 @@ h2 {
 
 nav {
   display: inline-block;
-  position: absolute;
   width: 200px;
+  vertical-align: top;
+  
 }
 
 main {
   display: inline-block;
   width: 60%;
-  position: relative;
-  left: 200px;
   margin-top: 15px;
 }
 
@@ -83,14 +82,16 @@ nav a {
   border-radius: 0 5px 5px 0;
   opacity: 0.9;
   border: 1px solid rgb(227, 239, 225);
+  transition: 0.4s;
 }
 
 nav a:hover {
 
-  background-color: rgba(66, 65, 43, 0.541);
+  background-color: rgba(21, 190, 247, 0.541);
   transform: translateX(6px);
+  color: black;
   border-radius: 5px 5px 5px 5px;
-  border: 1px solid rgb(22, 90, 8);
+  border: 1px solid rgb(227, 239, 225);
 }
 
 nav a:first-child {
@@ -125,4 +126,7 @@ p {
 
 article {
   margin-left: 15px;
+}
+p>a{
+  text-decoration: underline black;
 }
