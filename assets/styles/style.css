@@ -9,10 +9,6 @@ body {
   margin: 0 80px;
   background-color: aliceblue;
 }
-.fondo{
-    background-color: rgb(229, 233, 238);
-    height: 100vh;
-}
 
 header {
   height: 300px;
@@ -43,6 +39,7 @@ header h1 {
   line-height: 0.9;
   text-align: left;
   text-indent: 0.5em;
+  display: inline-block;
 }
 
 h2 {
@@ -52,27 +49,58 @@ h2 {
   text-align: center;
 }
 
-#logo-header {
+#logo-header1 {
+  position: relative;
+  display: inline-block;
+
+}
+#logo-header2 {
   position: absolute;
   top: 260px;
   right: 100px;
 }
 
-nav {
-  display: inline-block;
-  width: 200px;
-  vertical-align: top;
-  
+.active-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-main {
-  display: inline-block;
-  width: 60%;
-  margin-top: 15px;
+#events> p {
+  text-indent: 4em;
+}
+
+#events h3 {
+  text-indent: 2em;
+  font-style: italic;
+}
+
+p {
+  text-indent: 1em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+p>a{
+  text-decoration: underline black;
+}
+
+.fondo{
+  display: flex;
+  align-items: flex-start;
+  background-color: rgb(229, 233, 238);
+  height: 100vh;
+  padding-top: 20px;
+}
+
+nav {
+  display: inline-flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 20px;
 }
 
 nav a {
-  display: block;
   font-size: medium;
   margin-top: 2px;
   padding: 0 1em;
@@ -86,7 +114,6 @@ nav a {
 }
 
 nav a:hover {
-
   background-color: rgba(21, 190, 247, 0.541);
   transform: translateX(6px);
   color: black;
@@ -94,39 +121,36 @@ nav a:hover {
   border: 1px solid rgb(227, 239, 225);
 }
 
-nav a:first-child {
-  margin-top: 20px;
+main {
+  display: inline-flex;
+  width: 100%;
+  align-items: flex-start;
 }
 
-section {
+section{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+#contact-content{
   display: inline-block;
 }
 
-.active-link {
-  text-decoration: none;
+#imagenSide{
+  display:inline-flex;
+  width: 20%;
+}
+
+footer{
+  display: flex;
+  height: 150px;
+  background: black;
+}
+
+.info-disenador{
+  display: inline-flex;
+  width: 100%;
   color: white;
-  font-weight: bold;
-}
-
-#events > p {
-  text-indent: 4em;
-}
-
-#events h3 {
-  text-indent: 2em;
-  margin: 0;
-  font-style: italic;
-}
-
-p {
-  text-indent: 1em;
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-article {
-  margin-left: 15px;
-}
-p>a{
-  text-decoration: underline black;
+  justify-content: center;
+  align-items: center;
 }
