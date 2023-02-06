@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <img id="logo-header1" src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" width="100">
+            <h1>Mighty Ducks Hockey League</h1>
+        </header>
+        <h2>Registration form</h2>
+        <img id="logo-header2" src="./assets/img/Logo_Mighty_ducks-01.png" alt="logo" width="100">
+        <div class="fondo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About MDHL</a>
+                <a href="contact.html">Contact</a>
+                <a href="game_info.html">Game information</a>
+                <a href="rules.html">Rules</a>
+                <a class="active-link" href="#">Registration Form</a>
+            </nav>
+            <main>
+                <section>
+                    <form action="show_data.html" method="get">
+                        <div class="info-primary">
+                            <h3>Registration Form</h3>
+                            <label class="halfSpace" for="firstName">
+                                Player's First Name:<input id="firstName" type="text">
+                            </label>
+
+                            <label class="halfSpace" for="lastName">
+                                Last Name:<input id="lastName" type="text">
+                            </label>
+
+                            <label class="fullSpace" for="street">
+                                Street Address:<input id="street" type="text">
+                            </label>
+
+                            <label class="halfSpace" for="city">
+                                City:<input id="city" type="text">
+                            </label>
+
+                            <label class="halfSpace" for="zipCode">
+                                Zip Code:<input id="zipCode" type="text">
+                            </label>
+
+                            <label class="halfSpace" for="birthDate">
+                                Birth Date(mm/dd/yy):<input id="birthDate" type="text">
+                            </label>
+
+                            <label class="halfSpace">
+                                Gender:
+                                <input class="radiobtn" type="radio" value="female" name="gender">Female
+                                <input class="radiobtn" type="radio" value="Male" name="gender">Male
+                            </label>
+
+                            <label class="fullSpace">
+                                Grade:
+                                <input class="radiobtn" type="radio" value="pre-school" name="grade">Pre-School
+                                <div class="smallLetter">
+                                    <input class="radiobtnGrade" type="radio" value="1st" name="grade" id="1st">
+                                    <label for="1st">1st</label>
+
+                                    <input class="radiobtnGrade" type="radio" value="2nd" name="grade" id="2nd">
+                                    <label for="2nd">2nd</label>
+
+                                    <input class="radiobtnGrade" type="radio" value="3rd" name="grade" id="3rd">
+                                    <label for="3rd">3rd</label>
+
+                                    <input class="radiobtnGrade" type="radio" value="4th" name="grade" id="4th">
+                                    <label for="4th">4th</label>
+
+                                    <input class="radiobtnGrade" type="radio" value="5th" name="grade" id="5th">
+                                    <label for="5th">5th</label>
+
+                                </div>
+                            </label>
+                        </div>
+                        <div class="info-secondary">
+                            <h3>Which elementary school do you live near?</h3>
+                            <div class="school-select">
+                                <label for="school-list">Closest School:</label>
+                                <select name="schools" id="school-list">
+                                    <option value="" selected disabled>--Please choose one o more schools--</option>
+                                    <option value="Aj Katzenmaier">Aj Katzenmaier</option>
+                                    <option value="Greenbay">Greenbay</option>
+                                    <option value="Howard A Yeager">Howard A Yeager</option>
+                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                    <option value="North Elementary">North Elementary</option>
+                                    <option value="South Elementary">South Elementary</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="info-secondary">
+                            <h3>What position(s) do you normally play? (check all that appky)</h3>
+                            <div class="school-select">
+                                <label for="school-list">Closest School:</label>
+                                <select name="schools" id="school-list">
+                                    <option value="" selected disabled>--Please choose one o more schools--</option>
+                                    <option value="Aj Katzenmaier">Aj Katzenmaier</option>
+                                    <option value="Greenbay">Greenbay</option>
+                                    <option value="Howard A Yeager">Howard A Yeager</option>
+                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                                    <option value="North Elementary">North Elementary</option>
+                                    <option value="South Elementary">South Elementary</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="info-disenador">
+                <p>Design by Gabriel Hernan Figueroa - 2023</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
