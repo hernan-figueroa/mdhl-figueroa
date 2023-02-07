@@ -52,11 +52,6 @@ h2 {
   display: inline-block;
   top: 20px;
 }
-#logo-header2 {
-  position: absolute;
-  top: 260px;
-  right: 100px;
-}
 
 .active-link {
   text-decoration: none;
@@ -283,7 +278,7 @@ form {
   margin: 20px 0;  
 }
 
-.info-secondary h3{
+.info-secondary h4{
   margin-bottom: 20px;  
 }
 .info-secondary p{
