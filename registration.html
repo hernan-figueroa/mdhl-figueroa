@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -36,34 +36,34 @@
                             <h3>Registration Form</h3>
                             <div>
                                 <label>
-                                    Player's First Name:<input type="text">
+                                    Player's First Name:<input type="text" name="first_name" required>
                                 </label>
                                 <label>
-                                    Last Name:<input type="text">
+                                    Last Name:<input type="text" name="last_name" required>
                                 </label>
                             </div>
 
                             <label>
-                                Street Address:<input type="text">
+                                Street Address:<input type="text" name="street_address" required>
                             </label>
 
                             <div>
                                 <label>
-                                    City:<input type="text">
+                                    City:<input type="text" name="city" required>
                                 </label>
 
                                 <label>
-                                    Zip Code:<input type="text">
+                                    Zip Code:<input type="text" name="zip_code" required>
                                 </label>
                             </div>
                             <div>
                                 <label>
-                                    Birth Date(mm/dd/yy):<input type="date">
+                                    Birth Date(mm/dd/yy):<input type="date" name="birth_date" required>
                                 </label>
 
                                 <label>
                                     Gender:
-                                    <input class="radiobtn" type="radio" value="female" name="gender">Female
+                                    <input class="radiobtn" type="radio" value="female" name="gender" checked>Female
                                     <input class="radiobtn" type="radio" value="Male" name="gender">Male
                                 </label>
                             </div>
@@ -72,7 +72,7 @@
                                 Grade:
                                 <input class="radiobtn" type="radio" value="pre-school" name="grade">Pre-School
                                 <div class="smallLetter">
-                                    <input class="radiobtnGrade" type="radio" value="1st" name="grade" id="1st">
+                                    <input class="radiobtnGrade" type="radio" value="1st" name="grade" id="1st" required>
                                     <label for="1st">1st</label>
 
                                     <input class="radiobtnGrade" type="radio" value="2nd" name="grade" id="2nd">
@@ -94,7 +94,7 @@
                             <h4>Which elementary school do you live near?</h4>
                             <div>
                                 <label for="school-list">Closest School:</label>
-                                <select name="schools" id="school-list">
+                                <select name="schools" id="school-list" required>
                                     <option value="" selected disabled>--Please choose one o more schools--</option>
                                     <option value="Aj Katzenmaier">Aj Katzenmaier</option>
                                     <option value="Greenbay">Greenbay</option>
@@ -174,7 +174,7 @@
                                 your name below, lalso
                                 acknowledge that I have read the cancellation policy and agree to its terms.</p>
                             <div>
-                                <label>Parent/GuardianSignature<input type="text" name="signature"></label>
+                                <label>Parent/GuardianSignature<input type="text" name="signature" required></label>
                             </div>
                             <div>
                                 <label>Date<input type="date" name="date"></label>
