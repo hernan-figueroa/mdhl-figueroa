@@ -35,35 +35,39 @@
                     <form action="show_data.html" method="get">
                         <div class="info-primary">
                             <h3>Registration Form</h3>
-                            <label class="halfSpace" for="firstName">
-                                Player's First Name:<input id="firstName" type="text">
+                            <div>
+                                <label>
+                                    Player's First Name:<input type="text">
+                                </label>
+                                <label>
+                                    Last Name:<input type="text">
+                                </label>
+                            </div>
+
+                            <label>
+                                Street Address:<input type="text">
                             </label>
 
-                            <label class="halfSpace" for="lastName">
-                                Last Name:<input id="lastName" type="text">
-                            </label>
+                            <div>
+                                <label>
+                                    City:<input type="text">
+                                </label>
 
-                            <label class="fullSpace" for="street">
-                                Street Address:<input id="street" type="text">
-                            </label>
+                                <label>
+                                    Zip Code:<input type="text">
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    Birth Date(mm/dd/yy):<input type="date">
+                                </label>
 
-                            <label class="halfSpace" for="city">
-                                City:<input id="city" type="text">
-                            </label>
-
-                            <label class="halfSpace" for="zipCode">
-                                Zip Code:<input id="zipCode" type="text">
-                            </label>
-
-                            <label class="halfSpace" for="birthDate">
-                                Birth Date(mm/dd/yy):<input id="birthDate" type="text">
-                            </label>
-
-                            <label class="halfSpace">
-                                Gender:
-                                <input class="radiobtn" type="radio" value="female" name="gender">Female
-                                <input class="radiobtn" type="radio" value="Male" name="gender">Male
-                            </label>
+                                <label>
+                                    Gender:
+                                    <input class="radiobtn" type="radio" value="female" name="gender">Female
+                                    <input class="radiobtn" type="radio" value="Male" name="gender">Male
+                                </label>
+                            </div>
 
                             <label class="fullSpace">
                                 Grade:
@@ -88,8 +92,8 @@
                             </label>
                         </div>
                         <div class="info-secondary">
-                            <h3>Which elementary school do you live near?</h3>
-                            <div class="school-select">
+                            <h4>Which elementary school do you live near?</h4>
+                            <div>
                                 <label for="school-list">Closest School:</label>
                                 <select name="schools" id="school-list">
                                     <option value="" selected disabled>--Please choose one o more schools--</option>
@@ -104,21 +108,52 @@
                         </div>
 
                         <div class="info-secondary">
-                            <h3>What position(s) do you normally play? (check all that appky)</h3>
-                            <div class="school-select">
-                                <label for="school-list">Closest School:</label>
-                                <select name="schools" id="school-list">
-                                    <option value="" selected disabled>--Please choose one o more schools--</option>
-                                    <option value="Aj Katzenmaier">Aj Katzenmaier</option>
-                                    <option value="Greenbay">Greenbay</option>
-                                    <option value="Howard A Yeager">Howard A Yeager</option>
-                                    <option value="Marjorie P Hart">Marjorie P Hart</option>
-                                    <option value="North Elementary">North Elementary</option>
-                                    <option value="South Elementary">South Elementary</option>
-                                </select>
+                            <h4>Which elementary school do you live near?</h4>
+                            <div>
+                                <input type="checkbox" name="position1" id="position1" value="Forward">
+                                <label for="position1">Forward</label>
+
+                                <input type="checkbox" name="position2" id="position2" value="Defense">
+                                <label for="position2">Defense</label>
+
+                                <input type="checkbox" name="position3" id="position3" value="Midfield">
+                                <label for="position3">Midfield</label>
+
+                                <input type="checkbox" name="position4" id="position4" value="Goalkeeper">
+                                <label for="position4">Goalkeeper</label>
+
                             </div>
                         </div>
 
+                        <div class="info-secondary">
+                            <h4>Uniform Size:</h4>
+                            <div class="two-column">
+
+                                <label class="label-flex" for="size1"><input type="checkbox" name="size1" id="size1"
+                                        value="Youth Small">Youth Small</label>
+
+                                <label class="label-flex" for="size2"><input type="checkbox" name="size2" id="size2"
+                                        value="Youth Medium">Youth Medium</label>
+
+                                <label class="label-flex" for="size3"><input type="checkbox" name="size3" id="size3"
+                                        value="Youth Large">Youth Large</label>
+
+                                <label class="label-flex" for="size4"><input type="checkbox" name="size4" id="size4"
+                                        value="Small">Small</label>
+
+                                <label class="label-flex" for="size5"><input type="checkbox" name="size5" id="size5"
+                                        value="Medium">Medium</label>
+
+                                <label class="label-flex" for="size6"><input type="checkbox" name="size6" id="size6"
+                                        value="Large">Large</label>
+
+                                <label class="label-flex" for="size7"><input type="checkbox" name="size7" id="size7"
+                                        value="Extra-Large">Extra-Large</label>
+
+                            </div>
+                        </div>
+
+                        <button type="submit">Send</button>
 
                     </form>
                 </section>

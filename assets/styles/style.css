@@ -258,17 +258,46 @@ dd {
   margin-right: 5em;
 }
 form {
-  width: 100%;
-  margin: 0 40px;;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 40px;
+  padding: 80px;
+  padding-top: 0;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0)
 }
 
+.info-primary {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-primary div{
+  display: inline-flex;
+}
 
 .info-secondary{
-  margin-top: 40px;
+  margin: 20px 0;  
+}
+
+.info-secondary h3{
+  margin-bottom: 20px;  
+}
+.info-secondary p{
+  margin-bottom: 0;  
 }
 
 form label {
   padding-top: 10px;
+}
+
+form h3{
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
 }
 
 input {
@@ -276,12 +305,17 @@ input {
   line-height: 28px;
   border: 2px solid transparent;
   border-bottom-color: #777;
-  padding: 0.2rem 0;
+  padding: 0.2rem 2rem;
   outline: none;
   background-color: transparent;
   color: #0d0c22;
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+form div{
+  margin: 20px 0;
+}
+
 
 .radiobtn{
   margin-right: 1em;
@@ -290,20 +324,20 @@ input {
 input:focus,
 input:hover {
   outline: none;
+  border-radius: 1rem;
+  border-color: #7a9cc6;
+}
+
+select{
+  outline: none;
+  background-color: transparent;
   padding: 0.2rem 1rem;
   border-radius: 1rem;
   border-color: #7a9cc6;
-  
 }
 
-.halfSpace {
-  display: inline-block;
-  width: 45%;
-}
-
-.fullSpace {
-  display: inline-block;
-  width: 90%;
+option:checked{
+  font-weight: bold;
 }
 
 .smallLetter{
@@ -314,14 +348,35 @@ input:hover {
   vertical-align: top;
 }
 
-.school-select{
-  margin-top: 20px;
-}
-
-.school-select>label{
-  vertical-align: top;
-}
-
 option{
   padding: 0 1em;
+}
+
+.label-flex{
+  display: inline-flex;
+  width: 40%;
+}
+
+.label-flex input{
+  margin-right: 5px;
+}
+
+button{
+  display: inline-flex;
+  background-color: #7a9cc6;
+  font-size: 20px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: white;
+  box-shadow:  -1px 2px 0px 1px rgba(0,0,0,0.5);
+}
+
+button:hover{
+  border: 2px solid white;
+  transform: translateY(-3px);
+  box-shadow:  -1px 4px 0px 1px rgba(0,0,0,0.5);
 }
