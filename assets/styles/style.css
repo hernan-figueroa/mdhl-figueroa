@@ -361,6 +361,7 @@ option:checked {
 .smallLetter label {
   font-size: 12px;
   vertical-align: top;
+  padding-top: 0;
 }
 
 option {
@@ -469,7 +470,6 @@ button:hover {
     flex-direction: column;
   }
   article {
-    padding: 0 auto;
     width: 90%;
   }
   .align-column {
