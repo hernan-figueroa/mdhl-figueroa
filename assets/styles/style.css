@@ -133,7 +133,6 @@ main {
 section {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 15px;
 }
 
 article {
@@ -209,7 +208,7 @@ ul {
 }
 
 table {
-  width: 60%;
+  width: 75%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-collapse: collapse;
   border-radius: 5px 5px 0 0;
@@ -304,6 +303,9 @@ form {
   margin-bottom: 0;
 }
 
+.align-column {
+  margin-left: 15px;
+}
 form label {
   padding-top: 10px;
 }
@@ -398,7 +400,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
+  width: 75%;
 }
 
 .card {
@@ -428,9 +430,170 @@ button:hover {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 548px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  section {
+    justify-content: center;
+  }
   form {
-    background-color: red;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .flex-row {
+    flex-direction: column;
+  }
+  #imagenSide {
+    margin-bottom: 30px;
+    width: 50%;
+  }
+  button {
+    margin-bottom: 15px;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  form {
+    padding: 0 15px;
+    margin: 0;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  section{
+    justify-content: center;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+  article {
+    padding: 0 auto;
+    width: 90%;
+  }
+  .align-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #imagenSide {
+    margin-bottom: 30px;
+    width: 50%;
+  }
+
+  main {
+    align-items: center;
+  }
+
+  header {
+    height: 150px;
+  }
+  header::before {
+    height: 150px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  nav a {
+    border-radius: 5px;
+    margin: 0 0.1em;
+    padding: 0 0.5em;
+    margin-bottom: 20px;
+    font-size: large;
+  }
+
+  .game-info {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .section-cards {
+    width: 90%;
+  }
+
+  dl {
+    margin: 15px 15px;
+  }
+  .game-info table {
+    width: 90%;
+  }
+
+  nav a:hover {
+    background-color: rgba(21, 190, 247, 0.541);
+    transform: translateY(6px);
+    border: 1px solid rgb(227, 239, 225);
+  }
+
+  .active-link {
+    background-color: rgba(21, 190, 247, 0.541);
+    transform: translateY(-6px);
+    color: black;
+    border: 2px solid rgb(83, 87, 82);
+  }
+
+  .fondo {
+    flex-direction: column;
+  }
+  button {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 1148px) and (min-width: 769px) {
+  form {
+    padding: 0 15px;
+    margin: 0;
+  }
+  nav {
+    width: 250px;
+  }
+  button {
+    margin-bottom: 15px;
+  }
+
+  .align-column {
+    margin-left: 15px;
+  }
+  #imagenSide {
+    width: 30%;
+  }
+
+  .game-info {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .section-cards {
+    width: 90%;
+  }
+
+  dl {
+    margin: 15px 15px;
+  }
+  .game-info table {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 1174px) {
+  .double-column {
+    flex-direction: column;
+  }
+
+  .double-column label:first-child {
+    margin-bottom: 20px;
+  }
+}
